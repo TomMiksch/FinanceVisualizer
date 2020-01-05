@@ -3,4 +3,13 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world_nwelcome_to_hell">Hello World! Welcome to Hell</string>
     <string name="i_am_a_button">I am a button</string>
+    
+    <string-array name="debit_or_credit">
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+    </string-array>
+    <string-array name="worth_it_or_no">
+        <item>Necessary</item>
+        <item>Unnecessary</item>
+    </string-array>
 </resources>

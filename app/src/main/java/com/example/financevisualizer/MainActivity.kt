@@ -1,17 +1,14 @@
 package com.example.financevisualizer
 
-import android.graphics.Color
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    var colorChange = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,14 +16,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "This will save or something at some point", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
-    }
-
-    fun changeColor(view: View) {
-        if (colorChange) view.setBackgroundColor(Color.BLUE) else view.setBackgroundColor(Color.WHITE)
-        colorChange = !colorChange
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
